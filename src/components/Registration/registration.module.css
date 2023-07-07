@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap');
+
+#why_register {
+    justify-content: space-between;
+    margin: 20px 170px;
+}
+
+#registering_heading p {
+    margin: 5px auto;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+}
+
+#registering_heading p:first-child {
+    font-size: 35px;
+}
+
+#why_register hr {
+    height: 0.5px;
+    background-color: black;
+}
+
+#registering_info {
+    display: flex;
+    margin: 10px auto;
+}
+
+#registering_info>p {
+    margin: 10px 30px 0px 0px;
+    font-size: 20px;
+    color: black;
+}
+
+#register {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 50%;
+    width: 1700px;
+}
+
+#register>p {
+    font-family: system-ui;
+    font-size: 20px;
+}
+
+.info_box {
+    background-color: rgb(238, 238, 238);
+    margin: 40px 0px;
+    border: 1px solid rgb(177, 177, 177);
+    padding: 10px;
+}
+
+
+#register>p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+    margin: 10px auto;
+}
+
+
+#register button {
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 2px 5px;
+    font-size: 16px;
+    height: 100%;
+    margin: auto auto;
+    padding: 7.5px 26px;
+    transition: all 0.5s ease-in-out;
+}
+
+#register>div {
+    display: flex;
+    justify-content: start;
+    margin-left: 0px;
+}
+
+#register input {
+    border: 1px gray solid;
+    margin: 10px 10px;
+    border-radius: 7px;
+    height: 35px;
+    width: 150px;
+}
+
+#register button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: red;
+}
+
+#regis_include {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 120%;
+    width: 100%;
+}
+
+#regis_include>p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+    margin: 10px auto;
+    padding: 10px 0px;
+}
+
+#regis_include>hr {
+    height: 1px;
+    width: 200px;
+    align-items: center;
+}
+
+#regis_include ul {
+    padding: 10px 40px;
+}
+
+#regis_include li {
+    font-family: system-ui;
+    margin: 4px auto;
+    font-size: 16px;
+    color: black;
+}
+
+#rules {
+    margin: auto 120px;
+}
+
+#rules>div {
+    padding: 20px 50px;
+}
+
+#rules p {
+    font-family: 'Hind', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#rules li {
+    font-family: system-ui;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 500;
+    margin: 25px auto;
+}
+
+#rules em {
+    font-family: system-ui;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 500;
+    margin: 25px auto;
+}
+
+.register_button {
+    margin-right: 10px !important;
+}
+
+
+
+@media only screen and (width<=1430px) {
+    #register {
+        height: 50%;
+        width: 1600px;
+    }
+}
+
+@media only screen and (width<=1288px) {
+    #register {
+        height: 50%;
+        width: 2800px;
+    }
+}
+
+@media only screen and (width<=1200px) {
+    #why_register {
+        margin: auto 10vw;
+    }
+    #registering_heading{
+        margin: 20px 0px 15px 0px;
+    }
+}
+
+
+
+
+@media only screen and (width<=980px) {
+    #why_register {
+        margin: 20px 100px;
+    }
+
+    #registering_heading p {
+        font-size: 20px;
+    }
+
+    #registering_heading p:first-child {
+        font-size: 30px;
+    }
+
+    #registering_info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #registering_info>p {
+        margin: 15px 30px 10px 0px;
+    }
+
+    #register {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+
+@media screen and (width<550px) {
+    #why_register {
+        margin: auto 10vw;
+    }
+
+    #registering_heading p {
+        font-size: 4vw;
+    }
+
+    #registering_heading p:first-child {
+        font-size: 6vw;
+    }
+
+    #registering_info>p {
+        font-size: 4vw;
+        margin: 5px auto;
+    }
+
+    #register>p {
+        font-size: 5vw;
+    }
+
+    #regis_include>p {
+        font-size: 5vw;
+    }
+
+    #regis_include li {
+        font-size: 4vw;
+    }
+
+    #rules {
+        margin: auto 15vw;
+    }
+
+    #rules>div {
+        padding: 20px 25px;
+    }
+
+    #rules p {
+        font-size: 7vw;
+    }
+
+    #rules li {
+        font-size: 4vw;
+    }
+
+    #rules em {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (width<=350px)
+{
+    #register>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+    }
+
+    #register button
+    {
+        margin: 15px 15px;
+    }
+}
+

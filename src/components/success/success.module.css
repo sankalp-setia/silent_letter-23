@@ -1,0 +1,144 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 70%;
+    border-radius: 5px;
+    margin-top: 7%;
+    height: 70vh;
+    margin-bottom: 7%;
+    padding: 5% 5% 0 5%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.tick {
+    width: 100%;
+    height: 40px;
+    font-size: 40px;
+    text-align: center;
+    color: #FF2B06;
+}
+
+.main_div {
+    display: flex;
+    justify-content: center;
+}
+
+.confirmed {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.75px;
+}
+
+.confirm {
+    text-align: center;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 3%;
+    letter-spacing: 0.75px;
+}
+
+.btn_dwn {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btne1 {
+    padding: 2%;
+    margin: 4%;
+    border: none;
+    background-color: #FF2B06;
+    border-radius: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
+    border: #FF2B06 solid 1px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.75px;
+    transition: 0.5s;
+}
+
+.btne2 {
+    padding: 2%;
+    margin: 4%;
+    border: none;
+    background-color: #FF2B06;
+    border-radius: 30px;
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: #FF2B06 solid 1px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.75px;
+    transition: 0.5s;
+}
+
+#exp {
+    padding-left: 20px;
+
+}
+
+.btne1:hover {
+    background-color: white;
+    color: #FF2B06;
+    border: #FF2B06 solid 1px;
+}
+
+.btne2:hover {
+    background-color: white;
+    color: #FF2B06;
+    border: #FF2B06 solid 1px;
+}
+
+
+.hidden_container {
+    position: absolute;
+    right: 10000px;
+    top: 0px;
+}
+
+.ticket_container {
+    position: relative;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .card {
+        height: 45%;
+    }
+
+    .btne1 {
+        margin: 3%;
+    }
+
+    .btne2 {
+        margin: 3%;
+        margin-bottom: 10%;
+    }
+
+    .btn_dwn {
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 600px) {
+    .card {
+        height: 30%;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .btn_dwn {
+        margin-top: 20px;
+    }
+
+    .btne2 {
+        margin-bottom: 15%;
+    }
+}

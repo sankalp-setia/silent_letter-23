@@ -1,0 +1,61 @@
+.counter-container {
+    width: 100%;
+    background: #222222;
+    display: grid;
+    grid-template-columns: 33% [col1-start] 33% [col2-start] 33% [col3-start];
+    position: relative;
+    background-image: url('https://www.tedxmilehigh.com/wp-content/uploads/2020/12/sec5-stud-bg@2x.jpg');
+    padding: 50px;
+    grid-gap: 50px;
+    background-position: center;
+
+    color: white;
+
+
+}
+
+.placeholder {
+    height: 2000px;
+}
+
+.counter-container
+{
+    margin: auto auto;
+}
+
+.counter-container .counter-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+
+    .text {
+        white-space: pre-line;
+        text-align: center;
+        font-size: 26px;
+        margin-top: 0;
+        padding-top: 10px;
+    }
+
+    .count {
+        margin-bottom: 0;
+        font-size: 52px;
+        font-weight: bold;
+        color: #fbb14c;
+    }
+
+
+}
+
+.typed-container {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:800px) {
+    .counter-container {
+        grid-template-columns: 50% [col1-start] 50% [col2-start];
+    }
+}

@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+}
+
+.nav {
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 10px;
+    top: 0;
+    border-bottom: 0.25px solid gray;
+}
+
+.logo {}
+
+#tedlogo {
+    width: 300px;
+}
+
+.link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 100px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1250px) {
+    .link {
+        margin-left: 3%;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .link {
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .link {
+        margin-left: 10%;
+    }
+}
+
+.toggle-link {
+    top: 115px;
+    left: 35%;
+    position: absolute;
+    background-color: white;
+    width: 18rem;
+    /* height: 100vh; */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+@media only screen and (max-width: 650px) {
+    .toggle-link {
+        left: 25%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .toggle-link {
+        left: 20%;
+    }
+}
+
+.list {
+    list-style: none;
+    text-align: center;
+    padding: 8%;
+    border-bottom: 1px #c7c7c7 solid;
+}
+
+/* .list:hover{
+    background-color: #ddd;
+} */
+.listlink {
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px #c7c7c7 solid;
+}
+
+/* .listdrop:hover{
+    background-color: #ddd;
+} */
+.listdrop {
+    list-style: none;
+    border-bottom: 1px #c7c7c7 solid;
+    padding: 4%;
+    padding-left: 40%;
+}
+
+.listdroplink {
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    width: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+#tab {
+    text-decoration: none;
+    margin-left: 5%;
+    color: red;
+    font-family: system-ui;
+    font-size: medium;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+#tab:hover {
+    color: black;
+}
+
+#tablink {
+    text-decoration: none;
+    color: red;
+    font-family: system-ui;
+    font-weight: 600;
+    font-size: medium;
+    transition: 0.5s;
+}
+
+#tablink:hover {
+    color: black;
+}
+
+.drop-down {
+    width: 110px;
+    height: 20px;
+    margin-left: 5%;
+    display: inline-block;
+}
+
+.drop-down:hover .drop-box {
+    display: block;
+    transition-duration: 5s;
+
+}
+
+#drop {
+    text-decoration: none;
+    color: red;
+    font-family: system-ui;
+    font-weight: 600;
+    font-size: medium
+}
+
+#droplink {
+    text-decoration: none;
+    color: red;
+    font-family: system-ui;
+    font-weight: 600;
+    font-size: medium;
+
+}
+
+#droplink:hover {
+    color: black;
+}
+
+.drop-box {
+    display: none;
+    position: absolute;
+    background-color: white;
+    margin-top: 1px;
+    width: 14%;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+#drop:hover {
+    color: black;
+}
+
+.year {
+    text-align: left;
+    padding-top: 10%;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+.year2 {
+    text-align: left;
+    padding-top: 4%;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+.year3 {
+    text-align: left;
+    padding-top: 10%;
+    padding-left: 12%;
+    display: flex;
+    flex-direction: row;
+}
+
+.droptab {
+    padding-top: 20px;
+    padding-left: 15%;
+    width: 50px;
+}
+
+.droptab2 {
+    padding-top: 15px;
+    padding-left: 18.5%;
+    width: 50px;
+}
+
+#atab {
+    text-decoration: none;
+    color: red;
+    font-family: system-ui;
+    font-size: medium;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+#atab:hover {
+    color: black;
+}
+
+.alink {
+    padding-top: 5px;
+    padding-left: 5px;
+    width: 50px;
+}
+
+#alink {
+    text-decoration: none;
+    color: red;
+    font-family: system-ui;
+    transition: 0.5s;
+    font-size: medium;
+}
+
+#alink:hover {
+    color: black;
+}
+
+.box {
+    background-color: rgb(106, 106, 106);
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+@media only screen and (min-width: 1140px) {
+    .toggle-menu {
+        display: none;
+    }
+
+    .btn {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    .link {
+        display: none;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        text-align: right;
+    }
+
+    .toggle-link {
+        width: 40rem;
+        top: 150px;
+        left: 29%;
+    }
+
+    .toggle-menu {
+        height: 4rem;
+        margin-top: 3rem;
+        margin-right: 2rem;
+        padding: 10px;
+        background-color: white;
+        border-radius: 5px;
+        border: #c7c7c7;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    .toggle-menu:hover {
+        background-color: #ddd;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .toggle-link {
+        width: 40rem;
+        top: 150px;
+        left: 20%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .toggle-link {
+        width: 35rem;
+        top: 150px;
+        left: 15%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #tedlogo {
+        width: 250px;
+        /* padding-top: 4%; */
+    }
+
+    .toggle-menu {
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
+
+    .toggle-link {
+        width: 30rem;
+    }
+
+    .nav {
+        height: 81px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #tedlogo {
+        width: 210px;
+        /* padding-top: 4%; */
+    }
+
+    .toggle-menu {
+        margin-left: 1rem;
+        margin-top: 1.5rem;
+        padding: 7px 6px 6px 6px;
+        height: 3.5rem;
+    }
+
+    .toggle-link {
+        width: 25rem;
+        top: 110px;
+        left: 14%;
+    }
+
+    .nav {
+        height: 71px;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 350px) {
+    #tedlogo {
+        width: 210px;
+        /* padding-top: 4%; */
+    }
+
+    .toggle-menu {
+        margin-left: 1rem;
+        margin-top: 1.5rem;
+        padding: 7px 6px 6px 6px;
+        height: 3.5rem;
+    }
+
+    .toggle-link {
+        width: 23rem;
+        top: 110px;
+        left: 10%;
+    }
+
+    .nav {
+        height: 71px;
+        width: 100%;
+    }
+}
+
+.test {
+    margin-top: 10%;
+}

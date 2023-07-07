@@ -1,0 +1,364 @@
+.text {
+  font-size: large;
+  color: black;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap");
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  /* font: 400 15px/1.8 "Lato", sans-serif; */
+  /* color: #777; */
+}
+
+
+.bgimg_1 {
+  position: relative;
+  background-image: url("/public/location_images/iitg_bg2.jpg");
+  min-height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Inter", sans-serif;
+}
+
+.bgimg_1 img {
+  width: 90%;
+  height: 90%;
+  filter: brightness(60%);
+
+}
+
+/* .bgimg-2 {
+    background-image: url("tedx4.jpg");
+    min-height: 600px;
+  } */
+
+
+
+.welcome-text {
+  position: relative;
+  padding: 10% 5%;
+  line-height: 1.45;
+  text-align: right;
+}
+
+.location-text {
+  text-shadow: 6px 6px 10px rgb(0, 0, 0);
+}
+
+.red-text {
+  color: #ff2b06;
+  font-size: 30px;
+}
+
+.welcome-text span {
+  /* background-color: #111; */
+  color: white;
+  filter: brightness(120%);
+  /* padding: 18px; */
+  font-size: 3vh;
+  letter-spacing: 0.60vh;
+  /* margin: 0 2% 0 0 ; */
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+/* @media only screen and (max-device-width: 1024px) {
+    .bgimg_1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll;
+    }
+  } */
+
+
+.venue-location {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 3% 2% 3% 2%;
+}
+
+.venue-img-div {
+  width: 45%;
+  height: 60vh;
+  margin: 2.5% 2.5% 2.5% 2.5%;
+}
+
+.venue-img {
+  width: 100%;
+  height: 100%;
+  /* margin: 0% 0% 2% 2%; */
+  border-radius: 5px;
+  /* border: 5px solid rgb(222, 219, 219); */
+  box-shadow: 5px 5px 5px rgb(141, 139, 139), 10px 10px 10px rgb(216, 213, 213);
+}
+
+.venue-info {
+  margin: 2.5% 2.5% 2.5% 2.5%;
+  font-family: "Inter", sans-serif;
+  width: 45%;
+  height: 100%;
+}
+
+.heading {
+  color: #ff2b06;
+  font-size: 3.5rem;
+  border-bottom: 5px solid #ff2b06;
+  /* width: 16.5%; */
+  font-family: "Inter", sans-serif;
+  letter-spacing: 3px;
+}
+
+.bgimg-3 {
+position: relative;
+opacity: 1;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.bgimg-3 {
+background-image: url("/public/location_images/tedx112.jpg");
+min-height: 90%;
+
+}
+.about-event-text{
+position: relative;
+text-align: left;
+line-height: 1.2;
+padding: 8% 4%;
+text-shadow: 5px 5px 5px rgb(0 0 0);  
+}
+.about-event-text span{
+  /* background-color: #111; */
+  color: white;
+  filter: brightness(100%);
+  /* padding: 18px; */
+  font-size: 25px;
+  letter-spacing: 5px;
+  /* margin: 0 2% 0 0 ; */
+}
+
+.insti-name {
+  font-size: 3.5vh;
+  margin-bottom: 2%;
+  margin-top: 3%;
+}
+
+.insti-info {
+  font-size: 3vh;
+  /* background-image: url('3968016.webp'); */
+}
+
+.guest-house-location {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 5% 3% 5% 3%;
+}
+
+.guest-house-info {
+  font-family: "Inter", sans-serif;
+  width: 45%;
+  margin: 2.5% 2.5% 2.5% 2.5%;
+  font-size: 2.5vh;
+  letter-spacing: 1px;
+}
+
+.guest-house-info-content {
+  margin: 5% 0 0 0;
+}
+
+.guest-house-map-div {
+  width: 45%;
+  /* width: 10px; */
+  height: 50vh;
+  margin: 2.5% 2.5% 2.5% 2.5%;
+  /* width: 90%; */
+  /* height: 60%; */
+  /* border: 5px solid rgb(243, 240, 240); */
+  box-shadow: 5px 5px 5px rgb(141, 139, 139), 10px 10px 10px rgb(216, 213, 213);
+  border-radius: 5px;
+}
+
+.guest-house-map-div iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width:1000px) {
+
+  .guest-house-location {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 5% 3% 5% 3%;
+
+  }
+
+  .venue-location {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 3% 2% 3% 2%;
+  }
+
+  .venue-img-div {
+    width: 95%;
+    height: 70%;
+    margin: 2.5% 2.5% 2.5% 2.5%;
+  }
+
+  .venue-img {
+    width: 100%;
+    height: 100%;
+    /* margin: 0% 0% 2% 2%; */
+    border-radius: 5px;
+    /* border: 5px solid rgb(222, 219, 219); */
+    box-shadow: 5px 5px 5px rgb(141, 139, 139), 10px 10px 10px rgb(216, 213, 213);
+  }
+
+  .venue-info {
+    margin: 2.5% 2.5% 2.5% 2.5%;
+    font-family: "Inter", sans-serif;
+    width: 90%;
+    height: 100%;
+  }
+
+  .insti-name {
+    font-size: 3.5vh;
+    margin-bottom: 2%;
+    margin-top: 3%;
+    text-align: left;
+    letter-spacing: 0.5px;
+  }
+
+  .insti-info {
+    font-size: 2.5vh;
+    /* background-image: url('3968016.webp'); */
+  }
+
+  .heading {
+    color: #ff2b06;
+    font-size: 4vh;
+    border-bottom: 5px solid #ff2b06;
+    /* width: 16.5%; */
+    font-family: "Inter", sans-serif;
+    letter-spacing: 3px;
+        line-height: 40px;
+  }
+
+  /* .bgimg_1 img{
+    width: 60vh;
+    height: 40vh;
+    filter: brightness(60%);
+    overflow: hidden;
+
+ 
+} */
+
+
+  .bgimg_1 {
+    position: relative;
+    background-image: url("/public/location_images/iitg_bg2.jpg");
+    min-height: 75%;
+    /* filter: brightness(70%); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Inter", sans-serif;
+    /* box-shadow: 0 0 80px 80px white inset; */
+  }
+
+  .welcome-text {
+    position: relative;
+    left: 0;
+    top: 35%;
+    /* bottom: 40%; */
+    width: 98%;
+    text-align: right;
+  }
+
+  .location-text {
+    text-shadow: 6px 6px 10px rgb(0, 0, 0);
+  }
+
+  .welcome-text span {
+    /* background-color: #111; */
+    color: white;
+    filter: brightness(120%);
+    /* padding: 18px; */
+    font-size: small;
+    letter-spacing: 0.5vh;
+    /* margin: 0 2% 0 0 ; */
+  }
+
+  .about-event-text {
+    position: relative;
+    text-align: left;
+    line-height: 1.2;
+    text-shadow: 10px 10px 5px rgb(0, 0, 0);
+  }
+
+  .about-event-text span {
+    /* background-color: #111; */
+    color: white;
+    filter: brightness(100%);
+    /* padding: 18px; */
+    font-size: 3vh;
+    letter-spacing: 0.5vh;
+    /* margin: 0 2% 0 0 ; */
+  }
+
+  /* canvas{
+  height: 350px !important;
+} */
+
+  .guest-house-location {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5% 3% 5% 3%;
+  }
+
+  .guest-house-info {
+    font-family: "Inter", sans-serif;
+    width: 90%;
+    margin: 2.5% 2.5% 2.5% 2.5%;
+    font-size: 2.5vh;
+    letter-spacing: 1px;
+  }
+
+  .guest-house-info-content {
+    margin: 5% 0 0 0;
+  }
+
+  .guest-house-map-div {
+    width: 90%;
+    /* width: 10px; */
+    height: 50vh;
+    margin: 2.5% 2.5% 2.5% 2.5%;
+    /* width: 90%; */
+    /* height: 60%; */
+    /* border: 5px solid rgb(243, 240, 240); */
+    box-shadow: 5px 5px 5px rgb(141, 139, 139), 10px 10px 10px rgb(216, 213, 213);
+    border-radius: 5px;
+  }
+
+  .guest-house-map-div iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+
+}

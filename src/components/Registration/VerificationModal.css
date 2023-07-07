@@ -1,0 +1,117 @@
+.customModal {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    border-radius: 10px !important;
+    padding: 0;
+    width: 400px;
+    overflow: hidden;
+}
+
+.customModal .react-responsive-modal-closeButton svg {
+    fill: rgba(0, 0, 0, 0.45);
+}
+
+.customModal h2 {
+    padding: 15px 20px 10px 20px;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.btn-container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn {
+    display: inline-block;
+    background: none;
+    color: inherit;
+    border: 1px solid #d9d9d9;
+    padding: 5px 10px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    border-radius: 6px;
+    font-size: 1.5rem;
+}
+
+.cancel-btn {
+    color: rgba(0, 0, 0, 0.88);
+    margin-right: 10px;
+}
+
+.submit-btn {
+    background-color: #1677ff;
+    color: white;
+    border: none;
+}
+
+.modal-body {
+    background: rgb(248, 248, 248);
+    padding: 20px;
+}
+
+.warning{
+    margin: 0px 20px 10px 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: small;
+    font-weight: 400;
+}
+
+.tedx_input {
+    border: 1px solid #d9d9d9;
+    height: 3.5rem;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.btn:disabled,
+.btn[disabled],
+.disabled_input {
+    background: rgba(0, 0, 0, .04);
+    color: rgba(0, 0, 0, .25);
+}
+
+.tedx_input:hover,
+.tedx_input:focus {
+    border: 1px solid #d9d9d9;
+}
+
+.email-container {
+    margin-top: 10px;
+    display: flex;
+}
+
+.otp_input {
+    width: 100px;
+    margin: 0 10px;
+}
+
+.error-msg {
+    padding-left: 10px;
+    font-size: 1.5rem;
+    color: #B04040;
+
+}
+
+@media screen and (max-width: 440px) {
+    .customModal {
+        border-radius: 10px !important;
+        width: 300px;
+    }
+    
+
+}
+
+@media screen and (max-width: 330px) {
+    .customModal {
+        border-radius: 10px !important;
+        width: 250px;
+    }
+    
+
+}
